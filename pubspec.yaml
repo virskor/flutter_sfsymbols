@@ -1,8 +1,8 @@
 name: flutter_sfsymbols
 description: A new Flutter package.
 version: 0.0.1
-author:
-homepage:
+author: virskor <virskor@gmail.com>
+homepage: https://github.com/virskor/flutter_sfsymbols
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
