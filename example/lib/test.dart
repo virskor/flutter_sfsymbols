@@ -1,71 +1,5 @@
-import 'package:flutter/material.dart';
-
-/// Identifiers for the supported Framework7 based SFsymbol design icons.
-///
-/// Use with the [Icon] class to show specific icons.
-///
-/// Icons are identified by their name as listed below.
-///
-/// To use this class, make sure you set fonts in your
-/// project's `pubspec.yaml` file in the `flutter` section. This ensures that
-/// the SFiconsets font is included in your application. This font is used to
-/// display the icons. For example:
-///
-/// ```yaml
-/// name: my_awesome_application
-///   fonts:
-///    - family: sficonsets
-///      fonts:
-///        - asset: packages/flutter_sfsymbols/fonts/sficonsets.ttf
-/// ```
-///
-/// {@tool sample}
-/// This example shows how to create a [Row] of [Icon]s in different colors and
-/// sizes. The first [Icon] uses a [semanticLabel] to announce in accessibility
-/// modes like TalkBack and VoiceOver.
-///
-///
-/// ```dart
-/// Row(
-///   mainAxisAlignment: MainAxisAlignment.spaceAround,
-///   children: const <Widget>[
-///     Icon(
-///       SFSymbols.alarm_fill,
-///       color: Colors.pink,
-///       size: 24.0,
-///       semanticLabel: 'Text to announce in accessibility modes',
-///     ),
-///     Icon(
-///       SFSymbols.audiotrack,
-///       color: Colors.ant_circle_fill,
-///       size: 30.0,
-///     ),
-///     Icon(
-///       SFSymbols.alarm,
-///       color: Colors.blue,
-///       size: 36.0,
-///     ),
-///   ],
-/// )
-/// ```
-/// {@end-tool}
-///
-/// See also:
-///
-///  * [Icon]
-///  * [IconButton]
-///  * <https://framework7.io/icons/>
-///
-class SFSymbols {
-  SFSymbols._();
-
-  /// <i class="f7-icons">alarm_fill</i> &#xe7b8; framework7 icon named "alarm_fill".
-  static const IconData alarm_fill = IconData(0xe7b8, fontFamily: 'sficonsets');
-
-  /// <i class="f7-icons">alt</i> &#xe7b9; framework7 icon named "alt".
-  static const IconData alt = IconData(0xe7b9, fontFamily: 'sficonsets');
-
-  static const IconData ant_circle_fill =
+final String codes = '''
+static const IconData ant_circle_fill =
       IconData(0xe7ba, fontFamily: 'sficonsets');
   static const IconData alarm = IconData(0xe7bb, fontFamily: 'sficonsets');
   static const IconData ant = IconData(0xe7bc, fontFamily: 'sficonsets');
@@ -2192,4 +2126,10 @@ class SFSymbols {
   static const IconData wand_stars = IconData(0xec81, fontFamily: 'sficonsets');
   static const IconData tag = IconData(0xec82, fontFamily: 'sficonsets');
   static const IconData airplane = IconData(0xed19, fontFamily: 'sficonsets');
+''';
+void main() {
+  final List<String> mapStrings = codes.split(';');
+  mapStrings.forEach((el) => {
+    print(el)
+  });
 }
