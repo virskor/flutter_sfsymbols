@@ -30,6 +30,8 @@ You can also use Apple SF symbols tool to browse all icon sets.
 import 'package:flutter_sfsymbols/flutter_sfsymbols.dart';
 
 const Icon(SFSymbols.airplane),
+const Icon(SFSymbols.ant_circle_fill),
+const Icon(SFSymbols.app_badge_fill),
 ```
 
 
