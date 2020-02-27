@@ -3,7 +3,7 @@
 A new Flutter package required SFSymbol icons.  
 This plugin support all ios and android devices.
 
-<img src="./icons.png">
+<img src="https://github.com/virskor/flutter_sfsymbols/raw/master/icons.png">
 
 ## Install
 add flutter_sfsymbols into your pubspec.yaml
