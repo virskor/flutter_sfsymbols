@@ -9,7 +9,7 @@ This plugin support all ios and android devices.
 add flutter_sfsymbols into your pubspec.yaml
 ```yaml
 dependencies:
- flutter_sfsymbols: ^1.0.0
+ flutter_sfsymbols: ^2.0.0
 ```
 
 and you need add fonts into your pubspec.yaml too  
